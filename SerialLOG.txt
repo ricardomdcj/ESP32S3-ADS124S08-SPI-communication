@@ -1,0 +1,78 @@
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+I (26) boot: ESP-IDF v5.2.1 2nd stage bootloader
+I (27) boot: compile time May  2 2024 18:48:20
+I (27) boot: Multicore bootloader
+I (30) boot: chip revision: v0.1
+I (34) boot.esp32s3: Boot SPI Speed : 80MHz
+I (38) boot.esp32s3: SPI Mode       : DIO
+I (43) boot.esp32s3: SPI Flash Size : 2MB
+I (48) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (57) boot: ## Label            Usage          Type ST Offset   Length
+I (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (79) boot:  2 factory          factory app      00 00 00010000 00100000
+I (86) boot: End of partition table
+I (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0edc4h ( 60868) map
+I (110) esp_image: segment 1: paddr=0001edec vaddr=3fc93e00 size=0122ch (  4652) load
+I (112) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1d0bch (118972) map
+I (137) esp_image: segment 3: paddr=0003d0e4 vaddr=3fc9502c size=0178ch (  6028) load
+I (139) esp_image: segment 4: paddr=0003e878 vaddr=40374000 size=0fd98h ( 64920) load
+I (164) boot: Loaded app from partition at offset 0x10000
+I (164) boot: Disabling RNG early entropy source...
+I (175) cpu_start: Multicore app
+I (185) cpu_start: Pro cpu start user code
+I (185) cpu_start: cpu freq: 160000000 Hz
+I (185) cpu_start: Application information:
+I (188) cpu_start: Project name:     Pt100espIDF
+I (193) cpu_start: App version:      1
+I (198) cpu_start: Compile time:     May  2 2024 18:47:37
+I (204) cpu_start: ELF file SHA256:  e91f03d9d...
+I (209) cpu_start: ESP-IDF:          v5.2.1
+I (214) cpu_start: Min chip rev:     v0.0
+I (219) cpu_start: Max chip rev:     v0.99 
+I (223) cpu_start: Chip rev:         v0.1
+I (228) heap_init: Initializing. RAM available for dynamic allocation:
+I (235) heap_init: At 3FC970A8 len 00052668 (329 KiB): RAM
+I (241) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (248) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (254) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM
+I (261) spi_flash: detected chip: gd
+I (264) spi_flash: flash io: dio
+W (268) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (282) sleep: Configure to isolate all GPIO pins in sleep state
+I (288) sleep: Enable automatic switching of GPIO sleep configuration
+I (296) main_task: Started on CPU0
+I (306) main_task: Calling app_main()
+I (306) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (316) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (336) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (346) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (346) gpio: GPIO[11]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (356) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1366) SPI2: Initializing SPI2
+I (1366) SPI2: DMA Channel: 3
+I (1366) SPI2: SPI Setup complete
+I (1396) SPI2: Adress 0, value 0
+I (1396) SPI2: Adress 2, value 0
+I (1396) SPI2: Adress 3, value 0
+I (1396) SPI2: Adress 4, value 0
+I (1396) SPI2: Adress 5, value 0
+I (1396) SPI2: Adress 6, value 0
+I (1406) SPI2: Adress 7, value 0
+I (1406) SPI2: Adress 8, value 0
+I (1416) SPI2: Adress 9, value 0
+I (1436) REG: Registers OK!
+I (1436) MAIN: SPI Reading Started
+I (1596) RESISTANCE: 8388608.000000
+I (2256) RESISTANCE: 8388608.000000
+I (2916) RESISTANCE: 8388608.000000
+I (3576) RESISTANCE: 8388608.000000
+I (4236) RESISTANCE: 8388608.000000
